@@ -3,3 +3,4 @@
 /rev
 /node_modules
 .idea
+package-lock.json
