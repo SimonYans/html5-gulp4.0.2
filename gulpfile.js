@@ -129,13 +129,17 @@ function js_build() {
 
 function image_rev_collector() {
     return src([app.revPath + "**/*.json", app.buildPath + "**/*.css"])
-        .pipe(revCollector({replaceReved: true}))
+        .pipe(revCollector({
+            replaceReved: true
+        }))
         .pipe(dest(app.buildPath + '/'));
 }
 
 function html_build() {
     return src([app.revPath + "**/*.json", app.srcPath + "**/*.html"])
-        .pipe(revCollector({replaceReved: true}))
+        .pipe(revCollector({
+            replaceReved: true
+        }))
         //.pipe(htmlMin(html_min_options))
         .pipe(dest(app.buildPath + '/'));
 }

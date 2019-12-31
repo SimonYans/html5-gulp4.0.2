@@ -11,7 +11,9 @@
   },
   "author": "ys",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "element-ui": "^2.13.0"
+  },
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",

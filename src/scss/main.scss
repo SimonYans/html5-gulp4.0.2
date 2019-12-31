@@ -1,7 +1,82 @@
 $imagePath : '../images/astatine.png';
-.main{
-  width:200px;
-  height:200px;
-  background: lightgreen;
-  margin: 0 auto;
+body{
+  //font-family: -apple-system,Helvetica Neue,Helvetica,PingFang SC,Microsoft YaHei,Arial,sans-serif;
+  font-family:  pingfang SC,Microsoft YaHei,"微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 14px;
+  background-color:#262626;
+  //user-select:none;
+}
+a{
+  text-decoration: none;
+  outline: none;
+
+}
+.layui-layer{
+  .el-button--default{
+    background:#373736;
+    border:1px solid #373736;
+
+  }
+  .el-button--default:hover{
+    opacity: 0.8;
+  }
+
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #343434 inset;
+  -webkit-text-fill-color: #ffffff;
+  border-radius:0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+// 重置滚动条样式
+
+::-webkit-scrollbar-button:vertical {
+  display: none
+}
+::-webkit-scrollbar-corner,::-webkit-scrollbar-track {
+  background-color: #222222;
+}
+::-webkit-scrollbar-thumb {border-radius: 0;background-color: #454545;}
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: rgba(69,69,69,.85)
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background-color: rgba(69,69,69,.88)
+}
+
+div::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+ul, li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.el-input__inner::-webkit-input-placeholder { color:#6E6E6E; }
+.el-input__inner::-moz-placeholder { color: #6E6E6E; }
+.el-input__inner:-ms-input-placeholder { color:#6E6E6E !important;  }
+.el-input__inner::-ms-input-placeholder { color:#6E6E6E;  }
+input::-webkit-input-placeholder { color:#6E6E6E;line-height:30px; }
+input::-moz-placeholder { color: #6E6E6E;line-height:30px;  }
+input:-ms-input-placeholder { color:#6E6E6E !important; line-height:30px;  }
+input::-ms-input-placeholder { color:#6E6E6E; line-height:30px;  }
+
+
+video:focus{
+  outline: none;
 }
